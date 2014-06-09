@@ -4,6 +4,8 @@
 
 Install the AWS CLI and Elastic Beanstalk CLI from [https://aws.amazon.com/tools/]
 
+Be sure to copy the AWSDevTools directory (from the AWS CLI download) to ~/.local/lib
+
 Setup the directories to store credentials:
 
     % mkdir ~/.ec2 ~/.aws
