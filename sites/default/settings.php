@@ -210,20 +210,15 @@
  *   );
  * @endcode
  */
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
-    array (
-      'database' => $_SERVER['RDS_DB_NAME'],
-      'username' => $_SERVER['RDS_USERNAME'],
-      'password' => $_SERVER['RDS_PASSWORD'],
-      'host' => $_SERVER['RDS_HOSTNAME'],
-      'port' => $_SERVER['RDS_PORT'],
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
+$databases = array();
+
+$databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => $_SERVER['RDS_DB_NAME'],
+    'username' => $_SERVER['RDS_USERNAME'],
+    'password' => $_SERVER['RDS_PASSWORD'],
+    'host' => $_SERVER['RDS_HOSTNAME'],
+    'prefix' => '',
 );
 
 /**
