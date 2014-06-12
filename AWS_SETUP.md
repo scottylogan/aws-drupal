@@ -28,6 +28,12 @@ Create `~/.aws/config` with this content:
 
 Pick up configuration pieces from [https://github.com/scottylogan/dotfiles]
 
+## Autocompletion
+
+Add this to your .bashrc to enable autocompletion:
+
+    complete -C aws_completer aws
+
 
 
 
